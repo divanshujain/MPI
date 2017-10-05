@@ -94,13 +94,6 @@ int main ( int argc, char *argv[] )
 
 		sort(suba, suba+nd);
 		
-	/*	cout	<< "Process " << world_rank << " :" << endl;
-		
-		forn(i, nd)
-		{
-			cout	<< suba[i] << endl;
-		}
-	*/
 	
 		int *snums;	
 		if(world_rank == 0)
@@ -128,6 +121,13 @@ int main ( int argc, char *argv[] )
 
 		}
 
+		cout	<< "Process " << world_rank << " :" << endl;
+		
+		forn(i, nd)
+		{
+			cout	<< suba[i] << endl;
+		}
+		
 		MPI_Barrier(MPI_COMM_WORLD);
 		MPI_Finalize();
 
