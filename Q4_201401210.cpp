@@ -79,7 +79,7 @@ int main ( int argc, char *argv[] )
 		}
 
 		forn(i, sz(ans))
-			cout	<< ans[i] << "\n" << endl;
+			cout	<< ans[i] << endl;
 
 		cout	<< "total=" << sz(ans) << endl;
 	}
